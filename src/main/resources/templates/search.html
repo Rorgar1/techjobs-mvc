@@ -38,7 +38,11 @@
 
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
 
+    <div class="job-listing" th:if="${jobs}">
+        <div th:replace="fragments :: display"></div>
+    </div>
 </div>
+
 
 </body>
 </html>
